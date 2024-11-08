@@ -7,6 +7,7 @@ from rest_framework import status
 from django.db import transaction
 from django.shortcuts import get_object_or_404
 from django.contrib.auth.models import User
+from scheduling_project import settings
 from users.models import UserProfile
 from .models import Availability, Meeting, MeetingAttendee, MeetingEditHistory, MeetingEditHistory, MeetingType
 from .serializers import AvailabilitySerializer, MeetingTypeSerializer
@@ -700,7 +701,7 @@ Participant Availability:
         return system_prompt, user_prompt
 
     def get_gpt_suggestions(self, prompt):
-        client = OpenAI(api_key='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')
+        client = OpenAI(api_key=settings.OPENAI_API_KEY)
         system_prompt, user_prompt = prompt
 
         try:
