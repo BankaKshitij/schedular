@@ -1,0 +1,104 @@
+# Python
+*.pyc
+*.pyo
+__pycache__
+*.pyd
+*.pyo
+.history
+
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+__pycache__/
+db.sqlite3
+*.sqlite3
+*.bak
+
+# Virtual Environment
+venv/
+env/
+ENV/
+*.env
+.Python
+
+# Django specific 
+staticfiles/
+media/
+# Coverage reports
+htmlcov/
+
+# Secrets
+*.env
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# IDE Specific (e.g. PyCharm, VSCode)
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
+.tox/
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+
+# Deployment
+*.mo
+*.pot
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# mypy
+.mypy_cache/
+
+# Bandit security scan
+.bandit
+
+# pytest
+.pytest_cache/
+
+# SQLite database file
+*.sqlite3
+
+# Ignore local and production settings
+local_settings.py
+production_settings.py
+
+# Ignore any instance of secrets, sensitive information
+secrets.json
+
+# Node modules for frontend
+node_modules/
+
+# Ignore compiled translation files
+*.mo
+
+# Ignore media uploads (for example, if you have file uploads in your application)
+media/
+
+# Ignore static files collected by Django (as they can be recreated)
+staticfiles/
+static/
+
+# Ignore files generated during packaging and building
+*.egg-info/
+dist/
+build/
+
+# Pipenv
+Pipfile.lock
